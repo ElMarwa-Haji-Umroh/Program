@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Reseller - El Marwa Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #701c1a;
+            --secondary: #e67e22;
+            --accent: #25D366;
+            --light: #f9f9f9;
+            --dark: #2c3e50;
+            --text: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 15px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+        
+        /* Header - Diperbaiki untuk mobile */
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 10px;
+        }
+        
+        .logo {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(112, 28, 26, 0.2);
+        }
+        
+        .logo img {
+            width: 60px;
+            height: auto;
+        }
+        
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1rem;
+            color: var(--text);
+            max-width: 700px;
+            margin: 10px auto 0;
+            line-height: 1.5;
+        }
+        
+        /* Form Section - Perbaikan signifikan untuk mobile */
+        #form-daftar {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            margin-bottom: 30px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .form-container {
+            padding: 25px 15px;
+        }
+        
+        .form-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .form-header p {
+            color: var(--text);
+            font-size: 1rem;
+            margin: 0 auto;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 0.95rem;
+        }
+        
+        .form-group .input-icon {
+            position: relative;
+        }
+        
+        .form-group .input-icon i {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary);
+            font-size: 16px;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 14px 14px 40px;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            background-color: var(--light);
+            color: var(--text);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(112, 28, 26, 0.1);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+            padding: 12px;
+        }
+        
+        /* Info Box - Perbaikan tata letak untuk mobile */
+        .info-box {
+            background: #fdf6f0;
+            border-left: 4px solid var(--primary);
+            padding: 18px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .info-box h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 1.15rem;
+        }
+        
+        .info-box h3 i {
+            margin-right: 8px;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+        
+        .info-box ul {
+            padding-left: 20px;
+        }
+        
+        .info-box li {
+            margin-bottom: 8px;
+            color: var(--text);
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+        
+        /* Submit Button */
+        .submit-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .submit-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 300px;
+            padding: 14px 25px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(112, 28, 26, 0.2);
+        }
+        
+        .submit-btn i {
+            margin-right: 8px;
+            font-size: 1.1rem;
+        }
+        
+        /* Benefits Section - Diperbaiki untuk mobile */
+        .benefits-section {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 35px 0;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        
+        .benefits-title {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+        
+        .benefits-title h2 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+        
+        .benefits-title p {
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 0 15px;
+        }
+        
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 22px 18px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        
+        .benefit-card i {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .benefit-card p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        /* Footer - Diperbaiki untuk mobile */
+        .footer {
+            text-align: center;
+            padding: 25px 15px;
+            color: var(--text);
+            font-size: 0.95rem;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 30px;
+            background: white;
+            border-radius: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 15px 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--light);
+            padding: 10px 15px;
+            border-radius: 6px;
+            border: 1px solid #e5e7eb;
+            font-size: 0.95rem;
+        }
+        
+        .contact-item i {
+            color: var(--primary);
+            min-width: 20px;
+        }
+        
+        .whatsapp-contact {
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 15px 0;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            width: 100%;
+            max-width: 300px;
+            font-size: 1rem;
+        }
+        
+        /* Success Message - Diperbaiki untuk mobile */
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 35px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+            margin: 20px 0;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .success-message i {
+            font-size: 3.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        
+        .success-message h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .success-message p {
+            font-size: 1.05rem;
+            color: var(--text);
+            max-width: 700px;
+            margin: 0 auto 20px;
+            line-height: 1.5;
+        }
+        
+        /* Media Query untuk Desktop */
+        @media (min-width: 768px) {
+            .header {
+                margin-bottom: 35px;
+                padding: 20px;
+            }
+            
+            .logo {
+                width: 110px;
+                height: 110px;
+            }
+            
+            .logo img {
+                width: 70px;
+            }
+            
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .header p {
+                font-size: 1.1rem;
+            }
+            
+            .form-container {
+                padding: 35px 30px;
+            }
+            
+            .form-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .form-group.full-width {
+                grid-column: span 2;
+            }
+            
+            .info-box {
+                padding: 22px;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .benefit-card {
+                padding: 25px 20px;
+            }
+            
+            .contact-info {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .whatsapp-contact {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="https://assets.zyrosite.com/YbNJxp9pq2SVJ0pl/elmarwa-logo-YbNJy7Rj52Sn1Br3.png" alt="El Marwa Travel Logo">
+            </div>
+            <p>Perjalanan Ibadah Penuh Berkah dan Kenyamanan</p>
+            <h1>Formulir Pendaftaran Reseller</h1>
+        </div>
+        
+        <!-- Form Section -->
+        <section id="form-daftar">
+            <div class="form-container">
+                <div class="form-header">
+                    <p><strong>Isi data diri Anda dengan lengkap untuk bergabung menjadi reseller El Marwa Travel</strong></p>
+                </div>
+                
+             
+                        
+                        <div class="info-box">
+                            <h3><i class="fas fa-info-circle"></i> Informasi Penting</h3>
+                            <ul>
+                                <li>Setelah mendaftar, tim kami akan menghubungi Anda dalam 1x24 jam melalui WhatsApp</li>
+                                <li>Anda akan mendapatkan pelatihan gratis tentang produk dan cara pemasaran</li>
+                                <li>Komisi menarik dari setiap paket yang berhasil dijual</li>
+                                <li>Dukungan penuh dari tim marketing profesional kami</li>
+                                <li>Bebas biaya pendaftaran dan tidak ada biaya bulanan</li>
+                            </ul>
+                        </div>
+                    </section>
+        <!-- Form Section-->
+        <section id="form-daftar">
+            <div class="form-container">
+                <div class="form-header">
+                    <p><strong>Isi data diri Anda dengan lengkap untuk bergabung menjadi reseller El Marwa Travel</strong></p>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc02u0ZHV8xRG4hGhCDiDs3q0AtoAwvTfJtswJsLEmEpbyv-Q/viewform?embedded=true" width="640" height="1305" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <div class="benefits-title">
+                <h2>Keuntungan Menjadi Reseller</h2>
+                <p>Bergabunglah dengan jaringan reseller El Marwa Travel dan dapatkan berbagai manfaat menarik</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-coins"></i>
+                    <h3>Komisi Menarik</h3>
+                    <p>Dapatkan komisi menarik dari setiap paket haji & umroh yang berhasil Anda jual</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-gift"></i>
+                    <h3>Bonus & Insentif</h3>
+                    <p>Bonus khusus untuk penjualan tertentu dan insentif perjalanan ibadah gratis</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Pelatihan Gratis</h3>
+                    <p>Pelatihan pemasaran dan produk secara berkala untuk meningkatkan penjualan</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Dukungan Penuh</h3>
+                    <p>Tim marketing profesional siap membantu Anda dalam proses penjualan</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Success Message -->
+        <div class="success-message" id="successMessage">
+            <i class="fas fa-check-circle"></i>
+            <h2>Pendaftaran Berhasil!</h2>
+            <p>Terima kasih telah mendaftar menjadi reseller El Marwa Travel. Tim kami akan menghubungi Anda melalui WhatsApp dalam waktu 1x24 jam untuk proses selanjutnya.</p>
+            
+            <a href="https://wa.me/6288214793139?text=Assalamu'alaikum%20Saya%20melihat%20program%20Reseller%20Haji%20&%20Umroh%20dari%20website%20El%20Marwa%20dan%20ingin%20bertanya%20lebih%20lanjut.." class="whatsapp-contact" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat WhatsApp Sekarang
+            </a>
+            
+            <button class="submit-btn" onclick="location.reload()" style="margin-top: 20px;">
+                <i class="fas fa-redo"></i> Kembali ke Form
+            </button>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+    <div class="contact-container">
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span><a href="mailto:elmarwatravels@gmail.com">elmarwatravels@gmail.com</a></span>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span><a href="https://maps.app.goo.gl/B3qFjq9YX3UhgK5N8" target="_blank">Kantor Pusat El Marwa Travel</a></span>
+        </div>
+    </div>
+    <div class="whatsapp-container">
+        <a href="https://chat.whatsapp.com/L2VwB5w86qkIzMjAqjCfRf?mode=ac_c" class="whatsapp-contact" target="_blank">
+            <i class="fab fa-whatsapp"></i> Join Group WhatsApp
+        </a>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2023 El Marwa Travel. Hak Cipta Dilindungi.</p>
+    </div>
+</div>
+
+<style>
+    .footer {
+        text-align: center;
+        padding: 30px 20px;
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+    }
+    
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 5px 0;
+    }
+    
+    .contact-item i {
+        color: #333;
+        font-size: 18px;
+    }
+    
+    .contact-item a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .contact-item a:hover {
+        color: #007bff;
+    }
+    
+    .whatsapp-contact {
+        display: inline-block;
+        background-color: #25D366;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 15px 0;
+        transition: background-color 0.3s;
+    }
+    
+    .whatsapp-contact:hover {
+        background-color: #128C7E;
+    }
+    
+    .copyright {
+        margin-top: 20px;
+        color: #666;
+        font-size: 14px;
+    }
+    
+    /* Responsive untuk mobile */
+    @media (max-width: 768px) {
+        .footer {
+            padding: 20px 15px;
+        }
+        
+        .contact-item {
+            flex-direction: column;
+            text-align: center;
+            gap: 5px;
+        }
+        
+        .whatsapp-contact {
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+    }
+</style>
+</body>
+</html
