@@ -713,61 +713,50 @@
         });
         
         // WhatsApp Templates
-        const whatsappTemplates = {
-            default: `Halo Admin Elmarwa, saya ingin daftar reseller umroh.%0A%0A` +
-                     `*Nama:* ${nama}%0A` +
-                     `*Email:* ${email}%0A` +
-                     `*Nomor HP:* ${phone}%0A` +
-                     `*Kota:* ${city}%0A%0A` +
-                     `Mohon info selanjutnya. Terima kasih.`,
-                     
-            priority: `[PRIORITAS] Pendaftaran Reseller Umroh%0A%0A` +
-                      `Nama: ${nama}%0A` +
-                      `Email: ${email}%0A` +
-                      `No. HP: ${phone}%0A` +
-                      `Kota: ${city}%0A%0A` +
-                      `Saya memilih pendaftaran prioritas. Mohon segera dihubungi!`
-        };
+         const whatsappTemplates = {
+        default: function(nama, email, phone, city) {
+            return `Halo Admin Elmarwa, saya ingin daftar reseller umroh.%0A%0A` +
+                   `*Nama:* ${nama}%0A` +
+                   `*Email:* ${email}%0A` +
+                   `*Nomor HP:* ${phone}%0A` +
+                   `*Kota:* ${city}%0A%0A` +
+                   `Mohon info selanjutnya. Terima kasih.`;
+        },
+        priority: function(nama, email, phone, city) {
+            return `[PRIORITAS] Pendaftaran Reseller Umroh%0A%0A` +
+                   `Nama: ${nama}%0A` +
+                   `Email: ${email}%0A` +
+                   `No. HP: ${phone}%0A` +
+                   `Kota: ${city}%0A%0A` +
+                   `Saya memilih pendaftaran prioritas. Mohon segera dihubungi!`;
+        }
+    };
 
         // Form submission to WhatsApp
-        document.getElementById('registrationForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const nama = document.getElementById('nama').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const city = document.getElementById('city').value;
-            const messageType = document.getElementById('messageType').value;
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const nama = document.getElementById('nama').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const city = document.getElementById('city').value;
+        const messageType = document.getElementById('messageType').value;
 
-            // Save to localStorage
-            localStorage.setItem('pendaftarTerakhir', JSON.stringify({
-                nama: nama,
-                email: email,
-                phone: phone,
-                city: city,
-                messageType: messageType,
-                timestamp: new Date().toISOString()
-            }));
-
-            // Prepare WhatsApp message
-            const message = encodeURIComponent(
-                whatsappTemplates[messageType]
-                .replace('${nama}', nama)
-                .replace('${email}', email)
-                .replace('${phone}', phone)
-                .replace('${city}', city)
-            );
-            
-            // WhatsApp number
-            const whatsappNumber = '6289501303251';
-            
-            // Open WhatsApp
-            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
-            
-            // Show confirmation
-            alert('Terima kasih! Anda akan diarahkan ke WhatsApp untuk menyelesaikan pendaftaran.');
-        });
+        // Prepare WhatsApp message
+        const message = encodeURIComponent(
+            whatsappTemplates[messageType](nama, email, phone, city)
+        );
+        
+        // WhatsApp number
+        const whatsappNumber = '6289501303251';
+        
+        // Open WhatsApp
+        window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+        
+        // Show confirmation
+        alert('Terima kasih! Anda akan diarahkan ke WhatsApp untuk menyelesaikan pendaftaran.');
+    });
         
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
