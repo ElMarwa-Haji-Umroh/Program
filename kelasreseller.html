@@ -720,23 +720,25 @@
         
         // WhatsApp Templates
          const whatsappTemplates = {
-        default: function(nama, email, phone, city) {
-            return `Halo Admin Elmarwa, saya ingin daftar reseller umroh.%0A%0A` +
-                   `*Nama:* ${nama}%0A` +
-                   `*Email:* ${email}%0A` +
-                   `*Nomor HP:* ${phone}%0A` +
-                   `*Kota:* ${city}%0A%0A` +
-                   `Mohon info selanjutnya. Terima kasih.`;
-        },
-        priority: function(nama, email, phone, city) {
-            return `[PRIORITAS] Pendaftaran Reseller Umroh%0A%0A` +
-                   `Nama: ${nama}%0A` +
-                   `Email: ${email}%0A` +
-                   `No. HP: ${phone}%0A` +
-                   `Kota: ${city}%0A%0A` +
-                   `Saya memilih pendaftaran prioritas. Mohon segera dihubungi!`;
-        }
-    };
+    default: function(nama, email, phone, city) {
+        return `Halo Admin Elmarwa, saya ingin daftar reseller umroh.\n\n` +
+               `*Berikut Data Yang di Input*\n` +
+               `* Nama: ${nama}\n` +
+               `* No WA: ${phone}\n` +
+               `* Email: ${email}\n` +
+               `* Alamat Lengkap: ${city}\n\n` +
+               `Mohon info selanjutnya. Terima kasih.`;
+    },
+    priority: function(nama, email, phone, city) {
+        return `[PRIORITAS] Pendaftaran Reseller Umroh\n\n` +
+               `*Berikut Data Yang di Input*\n` +
+               `* Nama: ${nama}\n` +
+               `* No WA: ${phone}\n` +
+               `* Email: ${email}\n` +
+               `* Alamat Lengkap: ${city}\n\n` +
+               `Saya memilih pendaftaran prioritas. Mohon segera dihubungi!`;
+    }
+};
 
         // Form submission to WhatsApp
     document.getElementById('registrationForm').addEventListener('submit', function(e) {
