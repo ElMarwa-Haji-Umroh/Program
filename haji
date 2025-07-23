@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Haji Khusus 2026 | Elmarwa Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #701c1a;
+            --accent: #d4af37;
+            --light: #f9f3e9;
+            --dark: #2c0a09;
+            --text: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(44, 10, 9, 0.9), rgba(44, 10, 9, 0.9)), url('https://assets.zyrosite.com/YbNJxp9pq2SVJ0pl/main-image-Awv9PgR6ZViOqbBo.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 1rem 5%;
+            position: relative;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+         .logo img {
+            height: 80px;
+            background-color: #000000;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            color: var(--accent);
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .contact-info {
+            text-align: right;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            backdrop-filter: blur(5px);
+        }
+        
+        .contact-info p {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            color: #f0f0f0;
+        }
+        
+        .contact-info .phone {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        
+        .hero h2 span {
+            color: var(--accent);
+            display: block;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: #f0f0f0;
+        }
+        
+        .cta-button {
+            background-color: var(--accent);
+            color: var(--dark);
+            font-weight: bold;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-button:hover {
+            background-color: #c29a2c;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .down-arrow {
+            display: block;
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 2rem;
+            animation: bounce 2s infinite;
+            color: var(--accent);
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-20px);}
+            60% {transform: translateY(-10px);}
+        }
+        
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-title h3 {
+            font-size: 2rem;
+            color: var(--primary);
+            display: inline-block;
+            padding: 0 20px;
+            background-color: var(--light);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: var(--accent);
+            z-index: 1;
+        }
+        
+        /* Pricing Section */
+        .pricing-info {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .pricing-info h3 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .pricing-info h3 i {
+            color: var(--accent);
+        }
+        
+        .package {
+            background: linear-gradient(to right, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05));
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .package:first-child {
+            margin-bottom: 0;
+        }
+        
+        .package h4 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .package h4 .price {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        .package ul {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+        
+        .package ul li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .package ul li::before {
+            content: "•";
+            color: var(--accent);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        
+        .note-box {
+            background-color: rgba(112, 28, 26, 0.05);
+            border-left: 4px solid var(--primary);
+            padding: 1rem;
+            margin-top: 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .note-box p {
+            font-size: 0.9rem;
+        }
+        
+        /* Problem Solution Section */
+        .problem-solution {
+            background: linear-gradient(to bottom, rgba(249, 243, 233, 0.8), rgba(249, 243, 233, 0.9)), url('https://images.unsplash.com/photo-1565996799993-4c1d5b0bf685?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 5rem 0;
+        }
+        
+        .problem-box {
+            background-color: rgba(44, 10, 9, 0.9);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .problem-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: var(--accent);
+        }
+        
+        .problem-box p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .solution-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .solution-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .solution-card i {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+        
+        .solution-card h4 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .solution-card p {
+            color: var(--text);
+        }
+        
+        /* Comparison Section */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .comparison-table th, 
+        .comparison-table td {
+            padding: 1.2rem 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: rgba(112, 28, 26, 0.03);
+        }
+        
+        .comparison-table .highlight {
+            background-color: rgba(212, 175, 55, 0.1);
+            font-weight: bold;
+        }
+        
+        .comparison-table .package-title {
+            background-color: var(--primary);
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .comparison-table .feature {
+            text-align: left;
+            font-weight: 500;
+            background-color: rgba(112, 28, 26, 0.05);
+        }
+        
+        /* Form Section */
+        .form-section {
+            background: linear-gradient(to bottom, var(--primary), #5a1614);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .form-section .section-title h3 {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .form-container h4 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-container p {
+            color: var(--text);
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+            font-weight: 500;
+        }
+        
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border 0.3s ease;
+        }
+        
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            border-color: var(--accent);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+        }
+        
+        .form-button {
+            background-color: var(--accent);
+            color: var(--dark);
+            font-weight: bold;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .form-button:hover {
+            background-color: #c29a2c;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .form-note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        
+        /* Trust Section */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .trust-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid var(--accent);
+        }
+        
+        .trust-card i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+        
+        .trust-card h4 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial {
+            background-color: rgba(112, 28, 26, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 3rem;
+            position: relative;
+            border-left: 4px solid var(--accent);
+        }
+        
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .testimonial p::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -15px;
+            font-size: 4rem;
+            color: rgba(112, 28, 26, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial .author {
+            font-weight: bold;
+            color: var(--primary);
+            text-align: right;
+        }
+        
+        /* Bonus Section */
+        .bonus-section {
+            background: linear-gradient(135deg, var(--primary), #8a2522);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .bonus-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .bonus-container h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+        
+        .bonus-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .bonus-item {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .bonus-item:hover {
+            transform: translateY(-5px);
+            background-color: rgba(212, 175, 55, 0.2);
+        }
+        
+        .bonus-item i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        .bonus-item p {
+            font-weight: 500;
+        }
+        
+        .timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 2rem auto;
+            max-width: 500px;
+        }
+        
+        .timer-item {
+            background-color: var(--dark);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            min-width: 70px;
+        }
+        
+        .timer-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        .timer-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-section h4 {
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .contact-details p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-details i {
+            color: var(--accent);
+            width: 20px;
+        }
+        
+        .quran-verse {
+            background: #181818;
+            color: #ffe082;
+            font-style: italic;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            margin-top: 0;
+            border-bottom: 2px solid #d4af37;
+            font-size: 1rem;
+            max-width: 100vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .quran-verse p:first-child {
+            color: #d4af37;
+            font-style: normal;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+        /* Dekorasi Islami */
+        .islamic-pattern {
+            position: absolute;
+            opacity: 0.05;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .pattern-1 {
+            top: 10%;
+            right: 5%;
+            width: 200px;
+            height: 200px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50,10 C70,10 90,25 90,50 C90,75 70,90 50,90 C30,90 10,75 10,50 C10,25 30,10 50,10 Z" fill="none" stroke="%23701c1a" stroke-width="2"/><circle cx="50" cy="50" r="30" fill="none" stroke="%23701c1a" stroke-width="2"/></svg>');
+        }
+        
+        .pattern-2 {
+            bottom: 20%;
+            left: 5%;
+            width: 150px;
+            height: 150px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20,50 Q50,10 80,50 T20,50" fill="none" stroke="%233a8c55" stroke-width="2"/><path d="M20,50 Q50,90 80,50 T20,50" fill="none" stroke="%233a8c55" stroke-width="2"/></svg>');
+        }
+        
+        .pattern-3 {
+            top: 40%;
+            left: 10%;
+            width: 100px;
+            height: 100px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,10 70,40 95,45 75,70 80,95 50,80 20,95 25,70 5,45 30,40" fill="none" stroke="%23d4af37" stroke-width="2"/></svg>');
+        }
+        .header-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+        .copyright p:first-child {
+            color: #d4af37;
+            font-style: normal;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+    
+  /* WhatsApp Button Styles */
+  .btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: white !important;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .btn-whatsapp:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+  }
+  
+  .btn-whatsapp i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
+  
+  /* Floating WhatsApp Button */
+/* Enhanced Floating WhatsApp Button - Mobile Optimized */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  animation: pulse 2s infinite;
+  display: none; /* Hidden by default, shown only on mobile */
+}
+
+.floating-whatsapp .btn-whatsapp {
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.floating-whatsapp .btn-whatsapp i {
+  margin-right: 0;
+  font-size: 1.8rem;
+}
+
+.floating-whatsapp .btn-whatsapp span {
+  display: none;
+}
+
+/* Show only on mobile */
+@media (max-width: 768px) {
+  .floating-whatsapp {
+    display: block;
+  }
+  
+  /* Alternative: Button with text on tablets */
+  @media (min-width: 481px) {
+    .floating-whatsapp .btn-whatsapp {
+      width: auto;
+      height: auto;
+      border-radius: 50px;
+      padding: 10px 15px;
+    }
+    .floating-whatsapp .btn-whatsapp i {
+      font-size: 1.2rem;
+      margin-right: 8px;
+    }
+    .floating-whatsapp .btn-whatsapp span {
+      display: inline;
+    }
+  }
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+  
+  /* WhatsApp Button in Pricing Section */
+  .whatsapp-pricing {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  /* Better touch target for mobile */
+.floating-whatsapp .btn-whatsapp {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Active state */
+.floating-whatsapp .btn-whatsapp:active {
+  transform: scale(0.95);
+  background-color: #128C7E;
+}
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .header-top {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .contact-info {
+                text-align: center;
+                width: 100%;
+                max-width: 400px;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section-title h3 {
+                font-size: 1.7rem;
+            }
+            
+            .comparison-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .logo {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            .package h4 {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .timer {
+                flex-wrap: wrap;
+            }
+        }
+        /* Tambahkan ini di bagian responsive styles */
+@media (max-width: 768px) {
+    /* Adjust font sizes */
+    html {
+        font-size: 14px;
+    }
+    
+    .hero h2 {
+        font-size: 1.6rem !important;
+        line-height: 1.3;
+    }
+    
+    .hero p {
+        font-size: 1rem !important;
+    }
+    
+    .section-title h3 {
+        font-size: 1.5rem !important;
+    }
+    
+    .package h4 {
+        font-size: 1.2rem !important;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Adjust spacing */
+    section {
+        padding: 2.5rem 0 !important;
+    }
+    
+    .pricing-info, .package, .solution-card, .trust-card {
+        padding: 1.5rem !important;
+    }
+    
+    /* Form adjustments */
+    .form-container {
+        padding: 1.5rem !important;
+    }
+    
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+        padding: 10px 12px !important;
+    }
+    
+    /* Table adjustments */
+    .comparison-table th, 
+    .comparison-table td {
+        padding: 0.8rem !important;
+        font-size: 0.9rem;
+    }
+    
+    /* Line height adjustments */
+    body {
+        line-height: 1.5;
+    }
+    
+    p, li {
+        line-height: 1.6;
+    }
+    
+    /* Button adjustments */
+    .cta-button, .form-button {
+        padding: 12px 20px !important;
+        font-size: 1rem !important;
+    }
+    
+    /* Quran verse section */
+    .quran-verse {
+        padding: 1.5rem 1rem !important;
+        font-size: 0.9rem !important;
+    }
+    
+    /* Header adjustments */
+    .logo img {
+        height: 60px !important;
+    }
+    
+    .contact-info {
+        padding: 8px 12px !important;
+    }
+    
+    .hero {
+        padding: 2.5rem 0 !important;
+    }
+    
+    /* Bonus section */
+    .bonus-item {
+        padding: 1rem !important;
+    }
+    
+    .timer-item {
+        min-width: 60px !important;
+        padding: 10px !important;
+    }
+    
+    .timer-number {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    html {
+        font-size: 13px;
+    }
+    
+    .hero h2 {
+        font-size: 1.4rem !important;
+    }
+    
+    .section-title h3 {
+        font-size: 1.3rem !important;
+    }
+    
+    .package ul li {
+        padding-left: 25px !important;
+    }
+    
+    .solution-grid, .trust-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Make sure content doesn't overflow */
+    .container {
+        padding: 0 15px !important;
+    }
+    
+    /* Adjust table for mobile */
+    .comparison-table {
+        font-size: 0.8rem;
+    }
+    
+    .comparison-table th, 
+    .comparison-table td {
+        padding: 0.6rem !important;
+    }
+    
+    /* Footer adjustments */
+    .footer-section {
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-details p {
+        font-size: 0.9rem;
+    }
+}
+    </style>
+    <style>
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .comparison-table {
+            display: none;
+        }
+        .comparison-mobile {
+            display: block !important;
+        }
+        .package-card {
+            margin-bottom: 2rem !important;
+        }
+    }
+    
+    @media (min-width: 769px) {
+        .comparison-mobile {
+            display: none !important;
+        }
+    }
+</style>
+</head>
+<body>
+     <div class="quran-verse">
+        <p>"Dan berserulah kepada manusia untuk mengerjakan haji, niscaya mereka akan datang kepadamu dengan berjalan kaki, dan mengendarai unta yang kurus yang datang dari segenap penjuru yang jauh,"</p>
+        <p>(QS. Al-Hajj: 27)</p>
+    </div>
+    <!-- Floating WhatsApp Button - Mobile Only -->
+<div class="floating-whatsapp">
+  <a href="https://wa.me/6288214793139?text=Assalamu'alaikum%20Saya%20melihat%20program%20*Haji*%20*Khusus*%20dari%20website%20El%20Marwa%20dan%20ingin%20bertanya%20lebih%20lanjut,%20bisa%20dibantu?,%20Syukron" 
+     class="btn btn-whatsapp" 
+     target="_blank"
+     aria-label="Chat via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat Now</span>
+  </a>
+</div>
+    <!-- Header -->
+    <header>
+        <div class="islamic-pattern pattern-1"></div>
+        <div class="islamic-pattern pattern-2"></div>
+        <div class="islamic-pattern pattern-3"></div>
+        
+        <div class="header-content">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="https://assets.zyrosite.com/YbNJxp9pq2SVJ0pl/elmarwa-logo-YbNJy7Rj52Sn1Br3.png" alt="Elmarwa Travel Logo">
+                    <h1 style="display:none;">Elmarwa Travel</h1>
+                </div>
+                <div class="contact-info">
+                    <p>Izin Resmi Kemenag</p>
+                    <p>No. 91200180223490004</p>
+                    <p class="phone"><i class="fas fa-phone"></i> 0882 1479 3139</p>
+                </div>
+            </div>
+            
+            <div class="hero">
+                <h2>Bersiaplah Menjemput Panggilan-Nya!<br><span>Kuota Haji Khusus 2026/1447H Terbatas</span></h2>
+                <p>Dengan bimbingan ulama kompeten dan akomodasi premium dekat Masjidil Haram, wujudkan impian ibadah haji mabrur bersama Elmarwa Travel</p>
+                <a href="https://elmarwa-umrohsesuaisunnah.safaruna.com/formulirhaji" target="_blank" class="cta-button">DAFTAR SEKARANG <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div style="margin-top: 2rem; text-align: center; width: 100%;">
+    <a href="https://wa.me/6288214793139?text=Assalamu'alaikum%20Saya%20melihat%20program%20*Haji*%20*Khusus*%20dari%20website%20El%20Marwa%20dan%20ingin%20bertanya%20lebih%20lanjut,%20bisa%20dibantu?,%20Syukron" 
+       class="btn btn-whatsapp" 
+       target="_blank"
+       style="margin: 0 auto; display: inline-flex;">
+      <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp
+    </a>
+  </div>
+            <div class="down-arrow" onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h3><i class="fas fa-info-circle"></i> Informasi Masa Tunggu & Biaya</h3>
+            </div>
+            
+            <div class="pricing-info">
+                <h3><i class="fas fa-clock"></i> Masa Tunggu & Rincian Biaya</h3>
+                
+                <!-- Paket Darussalam -->
+                <div class="package">
+                    <h4>PAKET DARUSSALAM <span class="price">USD 10.900 (≈ Rp 179.850.000)</span></h4>
+                    <ul>
+                        <li>DP Awal: <strong>USD 4.500</strong> (untuk pengambilan porsi)</li>
+                        <li>Cicilan: Pelunasan sebelum 31 Desember 2025</li>
+                        <li>Masa Tunggu: <strong>Mengikuti kuota Kemenag</strong> (prioritas bagi pemilik porsi ≥2 tahun)</li>
+                        <li>Hotel Mekkah: Anjum/Shuhada ⭐⭐⭐⭐⭐</li>
+                        <li>Hotel Madinah: Emaar Elite/Grand Plaza ⭐⭐⭐⭐⭐</li>
+                    </ul>
+                </div>
+                
+                <!-- Paket Adn -->
+                <div class="package">
+                    <h4>PAKET ADN PREMIUM <span class="price">USD 15.700 (≈ Rp 259.050.000)</span></h4>
+                    <ul>
+                        <li>DP Awal: <strong>USD 4.500</strong> (untuk pengambilan porsi)</li>
+                        <li>Cicilan: 3 termin (Agustus 2025, Januari 2026, Mei 2026)</li>
+                        <li>Masa Tunggu: <strong>5-8 Tahun</strong> (keberangkatan 2026 khusus pemilik porsi minimal 2 tahun)</li>
+                        <li>Hotel Mekkah: Movenpick/Pullman ⭐⭐⭐⭐⭐+</li>
+                        <li>Hotel Madinah: Movenpick/Millennium Aqeeq ⭐⭐⭐⭐⭐+</li>
+                        <li>Fasilitas Tambahan: Kereta cepat & Medical Check-up termasuk</li>
+                    </ul>
+                </div>
+                
+                <div class="note-box">
+                    <p><strong>Catatan Penting:</strong>  
+                    - Harga final dapat menyesuaikan rekomendasi Kemenag & maskapai  
+                    - Konversi Rupiah menggunakan kurs saat pembayaran (asumsi $1=Rp16.500)  
+                    - Biaya pembatalan porsi/pindah travel (pindah pin): USD 300 (jika dibatalkan sebelum tahun keberangkatan)</p>
+                </div>
+            </div>
+             
+        </div>
+</section>
+        <!-- New Registration Section -->
+<section style="background-color: var(--primary); padding: 3rem 0; text-align: center;">
+  <div class="container">
+    <h3 style="color: white; margin-bottom: 1.5rem; font-size: 1.8rem;">Sudah Tentukan Pilihan Paket Anda?</h3>
+    <p style="color: var(--light); max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem;">
+      Jangan tunda lagi kesempatan berhaji dengan masa tunggu lebih singkat dan fasilitas premium
+    </p>
+    <a href="https://elmarwa-umrohsesuaisunnah.safaruna.com/formulirhaji" target="_blank" class="cta-button" style="background-color: var(--accent); color: var(--dark);">
+      DAFTAR SEKARANG <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</section>
+    
+    <!-- Visa Warning Section -->
+<section id="visa-warning" style="background-color: #fff8f8; padding: 4rem 0; border-top: 1px solid var(--accent); border-bottom: 1px solid var(--accent);">
+    <div class="container">
+        <div class="section-title">
+            <h3 style="color: #d9534f;"><i class="fas fa-exclamation-triangle"></i> Peringatan Penting: Visa Ziarah/Multiple Bukan Untuk Haji!</h3>
+        </div>
+        
+        <div class="pricing-info" style="background-color: white; border-left: 4px solid #d9534f;">
+            <h3 style="color: #d9534f;"><i class="fas fa-passport"></i> Jangan Terkecoh Visa Ziarah/Multiple Ilegal</h3>
+            <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">Dalam dua tahun terakhir, banyak calon jamaah tergoda menggunakan <strong>visa ziarah/multiple</strong> sebagai jalan pintas berhaji. Padahal visa ini <strong style="color: #d9534f;">bukan untuk ibadah haji</strong>, melainkan untuk kunjungan biasa (wisata atau keluarga) maupun kunjungan dagang/bisnis.</p>
+            
+            <div style="background-color: rgba(217, 83, 79, 0.05); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+                <h4 style="color: #d9534f; margin-bottom: 1rem;"><i class="fas fa-times-circle"></i> Risiko Menggunakan Visa Ziarah:</h4>
+                <ul style="list-style-type: none;">
+                    <li style="margin-bottom: 0.8rem; padding-left: 30px; position: relative;"><i class="fas fa-ban" style="color: #d9534f; position: absolute; left: 0;"></i> <strong>Dicegat di Mekkah</strong> oleh otoritas setempat</li>
+                    <li style="margin-bottom: 0.8rem; padding-left: 30px; position: relative;"><i class="fas fa-ban" style="color: #d9534f; position: absolute; left: 0;"></i> <strong>Dideportasi ke Jeddah</strong> tanpa bisa menyelesaikan ibadah</li>
+                    <li style="margin-bottom: 0.8rem; padding-left: 30px; position: relative;"><i class="fas fa-ban" style="color: #d9534f; position: absolute; left: 0;"></i> Ibadah <strong>tidak diakui</strong> secara hukum syar'i maupun negara</li>
+                    <li style="padding-left: 30px; position: relative;"><i class="fas fa-ban" style="color: #d9534f; position: absolute; left: 0;"></i> Biaya mencapai <strong>Rp 180-200 juta</strong> tanpa jaminan</li>
+                </ul>
+            </div>
+            
+            <div style="background-color: rgba(112, 28, 26, 0.05); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary);">
+                <h4 style="color: var(--primary); margin-bottom: 1rem;"><i class="fas fa-check-circle"></i> Solusi Aman dari Elmarwa:</h4>
+                <p>Dengan biaya serupa, Anda bisa mendapatkan <strong>Haji Khusus resmi</strong> dengan:</p>
+                <ul style="columns: 2; list-style-type: none; margin-top: 1rem;">
+                    <li style="margin-bottom: 0.8rem; padding-left: 25px; position: relative;"><i class="fas fa-check" style="color: var(--primary); position: absolute; left: 0;"></i> Izin resmi Kemenag</li>
+                    <li style="margin-bottom: 0.8rem; padding-left: 25px; position: relative;"><i class="fas fa-check" style="color: var(--primary); position: absolute; left: 0;"></i> Bimbingan ustadz Ahlus Sunnah</li>
+                    <li style="margin-bottom: 0.8rem; padding-left: 25px; position: relative;"><i class="fas fa-check" style="color: var(--primary); position: absolute; left: 0;"></i> Hotel dekat Masjidil Haram</li>
+                    <li style="padding-left: 25px; position: relative;"><i class="fas fa-check" style="color: var(--primary); position: absolute; left: 0;"></i> Manasik terstruktur</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Problem & Solution Section -->
+    <section class="problem-solution">
+        <div class="container">
+        <div class="section-title">
+            <h3><i class="fas fa-star"></i> Mengapa Memilih Haji Khusus dengan El Marwa?</h3>
+        </div>
+            
+            <div class="problem-box">
+                <p>"Setiap tahun, rata-rata 4.3 juta umat Islam mengantre porsi haji dengan masa tunggu 20-40 tahun (data Kemenag 2024). Apakah Anda siap menunggu puluhan tahun sementara kesehatan tak bisa dijamin?</p>
+                <p>Dengan haji khusus Elmarwa:
+             
+                - Masa tunggu lebih singkat (5-8 tahun)
+                - Prioritas keberangkatan 2026 bagi pemilik porsi lama
+                Jangan biarkan usia atau kesehatan menjadi penghalang..."</p>
+            </div>
+            
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h4>Bimbingan Ulama Kompeten</h4>
+                    <p>Dibimbing langsung oleh ustadz berpengalaman sesuai paket yang dipilih, memastikan ibadah sesuai Al-Qur'an dan Sunnah</p>
+                </div>
+                
+                <div class="solution-card">
+                    <i class="fas fa-hotel"></i>
+                    <h4>Akomodasi Premium</h4>
+                    <p>Hotel bintang 5 berjarak kurang dari 200 meter dari Masjidil Haram, memudahkan ibadah setiap saat</p>
+                </div>
+                
+                <div class="solution-card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h4>Transparansi Biaya</h4>
+                    <p>Tidak ada biaya tersembunyi! Semua fasilitas include/exclude dijelaskan dengan jelas sejak awal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Why Choose Section - Updated -->
+<section class="problem-solution">
+    
+        
+        <div class="problem-box" style="background-color: rgba(112, 28, 26, 0.9);">
+            <p><strong>Tahun 2025 menjadi bukti:</strong> Banyak jamaah menggunakan visa ziarah (dengan biaya Rp 180-200 juta) akhirnya:</p>
+            <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li style="margin-bottom: 0.8rem; position: relative;">Dicegat di Mekkah & dideportasi ke Jeddah</li>
+                <li style="margin-bottom: 0.8rem; position: relative;">Tidak bisa menyelesaikan rukun haji</li>
+                <li style="position: relative;">Ibadah tidak sah secara syar'i</li>
+            </ul>
+            <p style="margin-top: 1.5rem; color: var(--accent); font-weight: bold;">El Marwa menawarkan solusi LEGAL dengan harga setara tapi AMAN dan DIRIDHAI ALLAH</p>
+        </div>
+        
+        <div class="solution-grid">
+            <!-- Card 1 -->
+            <div class="solution-card" style="border-top: 4px solid var(--accent);">
+                <i class="fas fa-award" style="color: var(--accent);"></i>
+                <h4>Paket Lengkap Sesua Budget</h4>
+                <p>
+                    <strong>Premium:</strong> Mulai Rp 259jt (Movenpick, kereta cepat)<br>
+                    <strong>Terjangkau:</strong> Mulai Rp 179jt (Hotel bintang 5 dekat Haram)
+                </p>
+                <p style="margin-top: 10px; font-size: 0.9rem; background: rgba(212, 175, 55, 0.1); padding: 8px; border-radius: 5px;">
+                    <i class="fas fa-lightbulb" style="color: var(--accent);"></i> DP sama: <strong>USD 4.500</strong> untuk semua paket
+                </p>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="solution-card">
+                <i class="fas fa-clock" style="color: var(--accent);"></i>
+                <h4>Masa Tunggu Pasti</h4>
+                <p>5-8 tahun (khusus) vs 20-40 tahun (reguler). Prioritas untuk pemilik porsi lama yang ingin percepat keberangkatan</p>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="solution-card">
+                <i class="fas fa-shield-alt" style="color: var(--accent);"></i>
+                <h4>100% Legal & Syar'i</h4>
+                <p>Izin resmi Kemenag No. 91200180223490004. Tidak ada risiko deportasi atau ibadah batal</p>
+            </div>
+        </div>
+        
+        <!-- Additional Comparison Box -->
+        <div style="background-color: white; border-radius: 12px; padding: 1.5rem; margin-top: 2rem; border-left: 4px solid var(--primary);">
+            <h4 style="color: var(--primary); margin-bottom: 1rem; text-align: center;"><i class="fas fa-balance-scale"></i> Perbandingan Nyata</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: center;">
+                <div style="background: rgba(217, 83, 79, 0.05); padding: 1rem; border-radius: 8px;">
+                    <h5 style="color: #d9534f;">Visa Ziarah Ilegal</h5>
+                    <p style="font-size: 0.9rem;">
+                        <strong>Rp 180-200jt</strong><br>
+                        ❌ Risiko deportasi<br>
+                        ❌ Ibadah tidak sah<br>
+                        ❌ Tidak ada jaminan
+                    </p>
+                </div>
+                <div style="background: rgba(112, 28, 26, 0.05); padding: 1rem; border-radius: 8px;">
+                    <h5 style="color: var(--primary);">Haji Khusus El Marwa</h5>
+                    <p style="font-size: 0.9rem;">
+                        <strong>Mulai Rp 179jt</strong><br>
+                        ✅ Legal Kemenag<br>
+                        ✅ Ibadah sah<br>
+                        ✅ Hotel bintang 5
+                    </p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 1.5rem; font-style: italic; font-size: 0.95rem;">
+                "Daripada bayar mahal untuk risiko, lebih pilih haji resmi yang jelas keberangkatannya"
+            </p>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 3rem;">
+  <a href="https://elmarwa-umrohsesuaisunnah.safaruna.com/formulirhaji" target="_blank" class="cta-button" style="display: inline-flex;">
+    DAFTAR SEKARANG <i class="fas fa-arrow-right"></i>
+  </a>
+  <p style="margin-top: 1rem; color: var(--text); font-size: 0.9rem;">Kuota terbatas - Prioritas bagi pendaftar pertama</p>
+</div>
+</section>
+
+    <!-- Waiting Time Section -->
+<section style="background-color: var(--light); padding: 3rem 0;">
+    <div class="container">
+        <div class="pricing-info" style="text-align: center; background-color: rgba(112, 28, 26, 0.05);">
+            <h3><i class="fas fa-hourglass-half"></i> Masa Tunggu Haji Reguler: 20-40 Tahun!</h3>
+            <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem;">
+                Jika Anda memilih haji reguler, <strong>masa tunggu bisa mencapai 20 hingga 40 tahun</strong>, tergantung provinsi. Banyak yang akhirnya <strong>tidak sempat berangkat</strong> karena faktor usia atau kesehatan. 
+                <br><br>
+                <span style="color: var(--primary); font-weight: bold;">Haji khusus menjadi pilihan terbaik bagi yang ingin memastikan ibadah hajinya terlaksana saat masih sehat dan mampu.</span>
+            </p>
+        </div>
+    </div>
+</section>
+    <!-- Comparison Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h3><i class="fas fa-balance-scale"></i> Perbandingan Paket</h3>
+            </div>
+            
+            <table class="comparison-table">
+                <tr>
+                    <th>FASILITAS</th>
+                    <th class="package-title">PAKET DARUSSALAM<br>(USD 10.900)</th>
+                    <th class="package-title">PAKET ADN<br>(USD 15.700)</th>
+                </tr>
+                <tr>
+                    <td class="feature">Masa Tunggu</td>
+                    <td>Kuota Kemenag*</td>
+                    <td class="highlight">5-8 Tahun</td>
+                </tr>
+                <tr>
+                    <td class="feature">DP Awal</td>
+                    <td colspan="2" class="highlight">USD 4.500 (SAMA)</td>
+                </tr>
+                <tr>
+                    <td class="feature">Hotel Mekkah</td>
+                    <td>Anjum/Shuhada ⭐⭐⭐⭐⭐</td>
+                    <td class="highlight">Movenpick/Pullman ⭐⭐⭐⭐⭐+</td>
+                </tr>
+                <tr>
+                    <td class="feature">Hotel Madinah</td>
+                    <td>Emaar Elite/Grand Plaza ⭐⭐⭐⭐⭐</td>
+                    <td class="highlight">Movenpick/Millennium Aqeeq ⭐⭐⭐⭐⭐+</td>
+                </tr>
+                <tr>
+                    <td class="feature">Penerbangan</td>
+                    <td>Etihad/Qatar</td>
+                    <td class="highlight">Saudia/Qatar</td>
+                </tr>
+                <tr>
+                    <td class="feature">Fasilitas Eksklusif</td>
+                    <td>Manasik + Perlengkapan</td>
+                    <td class="highlight">+ Kereta Cepat + MCU</td>
+                </tr>
+                <tr>
+                    <td class="feature">Pembimbing</td>
+                    <td>Ust. Arfan Abbas,<br/> Ust. Hudzaifah, Lc.,<br/> Ust. Abu Sahl,<br/> Ust Sansan Susandi, Lc., MH.</td>
+                    <td class="highlight">Ust. Abu Ya´la Kurneaedi, LC., M.Pd. <br/> Ust. Ahmad Bamualim, Lc., M.Pd.</td>
+                </tr>
+            </table>
+            <p style="text-align: center; margin-top: 10px;">*Prioritas bagi pemilik porsi ≥2 tahun jika kuota tersedia</p>
+        </div>
+
+        <!-- Comparison Section - Mobile Optimized -->
+<section style="padding: 2rem 0; background-color: #f9f9f9;">
+    <div class="container">
+        <div class="section-title">
+            <h3><i class="fas fa-star"></i> Pilih Paket Terbaik Anda</h3>
+        </div>
+
+        <!-- Mobile-Friendly Comparison Cards -->
+        <div class="comparison-mobile" style="display: none; /* Hidden on desktop */">
+            <!-- Paket Darussalam - Mobile Card -->
+            <div class="package-card" style="background: white; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05); overflow: hidden;">
+                <div style="background: var(--primary); color: white; padding: 1rem; text-align: center;">
+                    <h4 style="margin: 0; font-size: 1.3rem;">PAKET DARUSSALAM</h4>
+                    <p style="margin: 0; font-size: 1.5rem; font-weight: bold; color: var(--accent);">USD 10.900</p>
+                    <p style="margin: 0; font-size: 0.9rem;">≈ Rp 179.850.000</p>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="padding: 0.7rem 0; border-bottom: 1px dashed #eee; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i>
+                            <span>Hotel ⭐⭐⭐⭐⭐ (200m dari Haram)</span>
+                        </li>
+                        <li style="padding: 0.7rem 0; border-bottom: 1px dashed #eee; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i>
+                            <span>Penerbangan Etihad/Qatar</span>
+                        </li>
+                        <li style="padding: 0.7rem 0; border-bottom: 1px dashed #eee; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i>
+                            <span><u>Bimbingan :</u><br/>Ust. Arfan Abbas,<br/> Ust. Hudzaifah, Lc.,<br/> Ust. Abu Sahl,<br/> Ust Sansan Susandi, Lc., MH.</span>
+                        </li>
+                        <li style="padding: 0.7rem 0; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i>
+                            <span>DP Awal USD 4.500</span>
+                        </li>
+                    </ul>
+                    <a href="https://elmarwa-umrohsesuaisunnah.safaruna.com/formulirhaji" target="_blank" class="cta-button" style="display: block; text-align: center; margin-top: 1rem; padding: 12px; font-size: 1rem;">PILIH PAKET INI</a>
+                </div>
+            </div>
+
+            <!-- Paket Adn - Mobile Card -->
+            <div class="package-card" style="background: white; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05); overflow: hidden; border: 2px solid var(--accent);">
+                <div style="background: linear-gradient(to right, var(--primary), #5a1614); color: white; padding: 1rem; text-align: center; position: relative;">
+                    <div style="position: absolute; top: -10px; right: 15px; background: var(--accent); color: var(--dark); padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">RECOMMENDED</div>
+                    <h4 style="margin: 0; font-size: 1.3rem;">PAKET ADN PREMIUM</h4>
+                    <p style="margin: 0; font-size: 1.5rem; font-weight: bold; color: var(--accent);">USD 15.700</p>
+                    <p style="margin: 0; font-size: 0.9rem;">≈ Rp 259.050.000</p>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="padding: 0.7rem 0; border-bottom: 1px dashed #eee; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i>
+                            <span>Hotel ⭐⭐⭐⭐⭐+ (Movenpick)</span>
+                        </li>
+                        <li style="padding: 0.7rem 0; border-bottom: 1px dashed #eee; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i>
+                            <span>Kereta Cepat & Medical Check-up</span>
+                        </li>
+                        <li style="padding: 0.7rem 0; border-bottom: 1px dashed #eee; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i>
+                            <span><u>Bimbingan :</u> <br/> Ust. Abu Ya´la Kurneaedi, LC., M.Pd. <br/>Ust. Ahmad Bamualim, Lc., M.Pd.</span>
+                        </li>
+                        <li style="padding: 0.7rem 0; display: flex; align-items: center;">
+                            <i class="fas fa-check-circle" style="color: var(--primary); margin-right: 10px;"></i>
+                            <span>DP Awal USD 4.500</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Desktop Table (Hidden on Mobile) -->
+        <div class="comparison-table" style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
+                <tr>
+                    <th style="background: var(--primary); color: white; padding: 1rem; text-align: center; font-weight: 600;">FASILITAS</th>
+                    <th style="background: var(--primary); color: white; padding: 1rem; text-align: center; font-weight: 600;">PAKET DARUSSALAM<br><span style="color: var(--accent);">USD 10.900</span></th>
+                    <th style="background: var(--primary); color: white; padding: 1rem; text-align: center; font-weight: 600;">PAKET ADN PREMIUM<br><span style="color: var(--accent);">USD 15.700</span></th>
+                </tr>
+                <!-- Rows... -->
+            </table>
+        </div>
+
+        <!-- Note -->
+        <div style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: #666;">
+            <p>* Prioritas bagi pemilik porsi ≥2 tahun jika kuota tersedia</p>
+        </div>
+    </div>
+</section>
+<!-- New CTA Section -->
+<section style="padding: 3rem 0; background-color: rgba(112, 28, 26, 0.05);">
+  <div class="container" style="text-align: center;">
+    <h3 style="color: var(--primary); margin-bottom: 1.5rem;">Pilihan Jelas untuk Ibadah yang Mabrur</h3>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      <a href="https://wa.me/6288214793139?text=Assalamu'alaikum%20Saya%20membaca%20tentang%20*risiko%20visa%20ziarah*%20di%20website%20El%20Marwa%20dan%20ingin%20konsultasi%20solusi%20haji%20yang%20aman,%20bisa%20dibantu?,%20Syukron" target="_blank" class="btn btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Konsultasi
+      </a>
+      <a href="https://elmarwa-umrohsesuaisunnah.safaruna.com/formulirhaji" target="_blank" class="cta-button">
+        DAFTAR SEKARANG <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    </section>
+    <!-- Conclusion Section -->
+<section style="padding: 2rem 0;">
+    <div class="container">
+        <div style="background: linear-gradient(135deg, var(--primary), #8a2522); color: white; padding: 2.5rem; border-radius: 12px; text-align: center;">
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--accent);">Kesimpulan</h3>
+            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+                Daripada menanggung risiko besar dengan visa tidak sah, atau menunggu puluhan tahun untuk haji reguler, <strong>Haji Khusus El Marwa hadir sebagai solusi syar'i, legal, dan terencana.</strong>
+                <br><br>
+                Dengan memilih El Marwa, Anda tidak hanya memastikan keberangkatan yang aman, tetapi juga menjaga <strong>keabsahan ibadah Anda di hadapan Allah dan hukum negara.</strong>
+            </p>
+        </div>
+    </div>
+</section>
+    <!-- Registration Form Section -->
+    <section id="registration" class="form-section">
+        <div class="container">
+            <div class="section-title">
+                <h3><i class="fas fa-edit"></i> Form Pendaftaran</h3>
+            </div>
+            <div>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYDIr8OCm4GdUYsKD6pmnuJpGjheSRrDALP4teouIftnGFQw/viewform?embedded=true" width="680" height="1276" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <!---<div class="form-container">
+                <h4>Ambil Keputusan Bijak Hari Ini!</h4>
+                <p>Hanya 7% kuota tersisa untuk keberangkatan tahun 2026. Isi formulir berikut dan tim kami akan segera menghubungi Anda.</p>
+                
+                <form id="haji-form">
+                    <div class="form-group">
+                        <label for="fullname">Nama Lengkap (Sesuai KTP)*</label>
+                        <input type="text" id="fullname" placeholder="Contoh: Ahmad Sudirman" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" placeholder="email@anda.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">No. WhatsApp/HP*</label>
+                        <input type="tel" id="phone" placeholder="0812XXXXXXX" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="package">Pilih Paket*</label>
+                        <select id="package" required>
+                            <option value="">-- Pilih Paket --</option>
+                            <option value="darussalam">Paket Darussalam (USD 10.900 - Rp 179 juta)</option>
+                            <option value="adn">Paket Adn Premium (USD 15.700 - Rp 259 juta)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="haji-status">Status Porsi Haji Saat Ini*</label>
+                        <select id="haji-status" required>
+                            <option value="">-- Pilih Status --</option>
+                            <option value="new">Belum Punya Porsi</option>
+                            <option value="existing">Sudah Punya Porsi (>2 tahun)</option>
+                            <option value="transfer">Ingin Transfer Porsi</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="question">Pertanyaan Khusus (Opsional)</label>
+                        <textarea id="question" placeholder="Contoh: Apakah bisa bayar cicilan?"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-button">
+                        <i class="fas fa-paper-plane"></i> KIRIM PENDAFTARAN
+                    </button>
+                    
+                    <p class="form-note">✅ Kami akan menghubungi Anda dalam 1x24 jam via WhatsApp</p>
+                </form>
+            </div>--->
+        </div>
+    </section>
+    
+    <!-- Trust Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h3><i class="fas fa-shield-alt"></i> Kenapa Mempercayai Elmarwa?</h3>
+            </div>
+            
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h4>Legalitas Resmi</h4>
+                    <p>Izin Haji & Umroh resmi dari Kementerian Agama Republik Indonesia</p>
+                </div>
+                
+                <div class="trust-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h4>Proteksi Pembayaran</h4>
+                    <p>Dana jamaah disimpan di rekening terpisah (ESCROW) untuk keamanan maksimal</p>
+                </div>
+                
+                <div class="trust-card">
+                    <i class="fas fa-hands"></i>
+                    <h4>Bimbingan Syar'i</h4>
+                    <p>Dibimbing oleh ustadz kompeten dengan metode sesuai Al-Qur'an dan Sunnah</p>
+                </div>
+            </div>
+            
+            <!---<div class="testimonial">
+                <p>"DP USD 4.500 saya tahun 2020, Alhamdulillah berangkat 2024 via Paket Adn. Pelayanan transparan dan akomodasi sangat memuaskan. Ustadz pembimbing sangat membantu dalam menjalankan manasik."</p>
+                <p class="author">— Bpk. Hasan Basri (Jamaah Haji 1445H)</p>
+            </div>--->
+        </div>
+<div style="text-align: center; margin-top: 2rem;">
+    <a href="https://wa.me/6288214793139?text=Assalamu'alaikum%20Saya%20ingin%20bertanya%20tentang%20*jaminan%20keamanan*%20program%20haji%20El%20Marwa,%20bisa%20dibantu?,%20Syukron" class="btn btn-whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i> Tanya Tentang Jaminan
+    </a>
+  </div>
+    </section>
+    
+    <!-- Bonus Section -->
+    <section class="bonus-section">
+        <div class="container">
+            <div class="bonus-container">
+                <h3>BONUS SPESIAL PENDATANG AWAL!</h3>
+                <p>Daftar sebelum 30 Juli 2025 dapatkan bonus eksklusif:</p>
+                
+                <div class="bonus-list">
+                    <div class="bonus-item">
+                        <i class="fas fa-book"></i>
+                        <p>E-Book "Panduan Haji Mabrur" senilai Rp 350.000</p>
+                    </div>
+                    
+                    <div class="bonus-item">
+                        <i class="fas fa-comments"></i>
+                        <p>Konsultasi Syariah Gratis dengan Dewan Ustaz</p>
+                    </div>
+                    
+                    <div class="bonus-item">
+                        <i class="fas fa-walking"></i>
+                        <p>Simulasi Manasik Eksklusif Online</p>
+                    </div>
+                </div>
+                
+                <div class="timer">
+                    <div class="timer-item">
+                        <div class="timer-number" id="days">14</div>
+                        <div class="timer-label">Hari</div>
+                    </div>
+                    <div class="timer-item">
+                        <div class="timer-number" id="hours">22</div>
+                        <div class="timer-label">Jam</div>
+                    </div>
+                    <div class="timer-item">
+                        <div class="timer-number" id="minutes">45</div>
+                        <div class="timer-label">Menit</div>
+                    </div>
+                    <div class="timer-item">
+                        <div class="timer-number" id="seconds">30</div>
+                        <div class="timer-label">Detik</div>
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 2rem;">
+  <a href="https://wa.me/6288214793139?text=Assalamu'alaikum%20Saya%20ingin%20mendapatkan%20*bonus%20spesial*%20program%20haji%20El%20Marwa,%20bisa%20dibantu?,%20Syukron" target="_blank" class="btn btn-whatsapp" style="flex: 1; min-width: 200px;">
+    <i class="fab fa-whatsapp"></i> Tanya Tentang Bonus
+  </a>
+  <a href="https://elmarwa-umrohsesuaisunnah.safaruna.com/formulirhaji" target="_blank" class="cta-button" style="flex: 1; min-width: 200px;">
+    DAFTAR SEKARANG <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+            </div>
+        </div>
+
+    </section>
+     
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Kontak Kami</h4>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. H. Saidi No.16A, Tanjung Barat, Jakarta Selatan</p>
+                    <p><i class="fas fa-phone"></i> 0882 1479 3139 (Abdul)</p>
+                    <p><i class="fas fa-phone"></i> 0813 2490 3017 (Heru)</p>
+                    <p><i class="fas fa-envelope"></i> elmarwatravels@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Legalitas</h4>
+                <p>PT. MARWA MUSTAJAB WISATA</p>
+                <p>Izin UMROH : U.243/2021</p>
+                <p>Izin HAJI : 91200180223490004</p>
+                <p>NPWP : 12.345.678.9-012.345</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Jam Operasional</h4>
+                <p>Senin-Jumat: 08:00 - 17:00 WIB</p>
+                <p>Sabtu: 09:00 - 15:00 WIB</p>
+                <p>Minggu & Hari Libur: Tutup</p>
+            </div>
+        </div>
+<div style="text-align: center; padding: 2rem 0; background-color: rgba(0,0,0,0.1);">
+  <h4 style="color: var(--accent); margin-bottom: 1rem;">Siap Memulai Perjalanan Suci Anda?</h4>
+  <a href="https://elmarwa-umrohsesuaisunnah.safaruna.com/formulirhaji" target="_blank" class="cta-button" style="max-width: 300px; margin: 0 auto;">
+    DAFTAR SEKARANG <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+        <div class="copyright">
+            <p>&copy; 2025 PT. Marwa Mustajab Wisata. Hak Cipta Dilindungi. | Insya Allah Melayani dengan Ikhlas</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Timer countdown
+        function updateTimer() {
+            const now = new Date();
+            const targetDate = new Date('July 30, 2025 23:59:59');
+            const diff = targetDate - now;
+            
+            if (diff <= 0) {
+                document.querySelector('.timer').innerHTML = '<div class="timer-item">Penawaran telah berakhir</div>';
+                return;
+            }
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateTimer, 1000);
+        updateTimer();
+        
+        // Form submission
+        document.getElementById('haji-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            alert('Terima kasih! Pendaftaran Anda telah berhasil dikirim. Tim Elmarwa akan menghubungi Anda dalam 1x24 jam melalui WhatsApp.');
+            
+            // Reset form
+            this.reset();
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    // Add this script before </body>
+<script>
+  // Show/hide floating button on scroll
+  let lastScroll = 0;
+  const floatingBtn = document.querySelector('.floating-whatsapp');
+  
+  window.addEventListener('scroll', function() {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll <= 0) {
+      // At top of page
+      floatingBtn.style.opacity = '1';
+      floatingBtn.style.bottom = '20px';
+    } else if (currentScroll > lastScroll) {
+      // Scrolling down
+      floatingBtn.style.opacity = '0.7';
+      floatingBtn.style.bottom = '10px';
+    } else {
+      // Scrolling up
+      floatingBtn.style.opacity = '1';
+      floatingBtn.style.bottom = '20px';
+    }
+    lastScroll = currentScroll;
+  });
+</script>
+</body>
+</html>
