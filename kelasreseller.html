@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas Gratis Reseller Umroh Terbaik - Elmarwa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #701c1a;
+            --accent: #d4af37;
+            --light: #f9f3e9;
+            --dark: #2c0a09;
+            --text: #333;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            scroll-behavior: smooth;
+            background-color: #faf7f2;
+        }
+        .hero-pattern {
+            background: radial-gradient(circle, rgba(112,28,26,0.15) 0%, rgba(255,255,255,0) 70%);
+        }
+        .benefit-card {
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(112, 28, 26, 0.1);
+        }
+        .testimonial-card {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .form-container {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+        }
+        .floating-button {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .city-badge {
+            background: rgba(212, 175, 55, 0.15);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .countdown-box {
+            background: rgba(112, 28, 26, 0.1);
+            border: 2px dashed var(--accent);
+        }
+        .countdown-number {
+            min-width: 50px;
+            background: var(--primary);
+            color: white;
+        }
+        .h-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .gold-border {
+            border: 2px solid var(--accent);
+        }
+
+        /* Legal Badges Styles */
+        .legal-section {
+            background-color: var(--light);
+            padding: 60px 0 40px;
+        }
+        .legal-section .section-title h2,
+        .legal-section .section-title p,
+        .legal-section .badge-text {
+            color: #000 !important;
+        }
+        .legal-badges {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            max-width: 1200px;
+            margin: 30px auto 0;
+        }
+        .badge-item {
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .badge-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border-color: var(--accent);
+        }
+        .badge-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent);
+            color: var(--dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+            font-size: 20px;
+        }
+        .badge-text {
+            font-size: 16px;
+            line-height: 1.5;
+            color: var(--text);
+            font-weight: 500;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--dark);
+            font-family: 'Playfair Display', serif;
+        }
+        .section-title p {
+            color: #666;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+            transform: scale(1.03);
+        }
+        .whatsapp-button i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg" style="background-color: var(--primary);">E</div>
+                <span class="ml-3 text-xl font-bold" style="color: var(--primary);">Elmarwa Haji Umroh</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#benefits" class="text-gray-700 hover:text-primary font-medium" style="color: var(--primary);">Keuntungan</a>
+                <a href="#cities" class="text-gray-700 hover:text-primary font-medium" style="color: var(--primary);">Pasar Potensial</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-primary font-medium" style="color: var(--primary);">Testimoni</a>
+                <a href="#register" class="text-gray-700 hover:text-primary font-medium" style="color: var(--primary);">Daftar</a>
+            </nav>
+            <button class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 hero-pattern" style="background-color: var(--light);">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <div class="px-4 py-2 rounded-full inline-block mb-4" style="background-color: var(--accent); color: var(--dark);">
+                    <span>KELAS GRATIS - KUOTA TERBATAS</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 h-title" style="color: var(--dark);">
+                    Jadilah Reseller Umroh Terbaik<br>
+                    <span class="text-primary" style="color: var(--primary);">Raih Komisi Puluhan Juta</span>
+                </h1>
+                <p class="text-lg mb-8 max-w-lg">
+                    Bergabunglah dengan ribuan reseller sukses di 20+ kota dengan pasar umroh terbesar di Indonesia. 
+                    <span class="font-bold" style="color: var(--primary);">Banyuwangi, Jember, Sidoarjo, Bogor, Bekasi</span> 
+                    dan kota lainnya menunggu Anda!
+                </p>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-box rounded-xl p-4 mb-6">
+                    <p class="text-center font-bold mb-2" style="color: var(--primary);">PENDAFTARAN AKAN DITUTUP DALAM:</p>
+                    <div class="flex justify-center space-x-3">
+                        <div class="countdown-number flex flex-col items-center justify-center rounded-lg py-2">
+                            <span id="days" class="text-2xl font-bold">02</span>
+                            <span class="text-xs">Hari</span>
+                        </div>
+                        <div class="countdown-number flex flex-col items-center justify-center rounded-lg py-2">
+                            <span id="hours" class="text-2xl font-bold">12</span>
+                            <span class="text-xs">Jam</span>
+                        </div>
+                        <div class="countdown-number flex flex-col items-center justify-center rounded-lg py-2">
+                            <span id="minutes" class="text-2xl font-bold">45</span>
+                            <span class="text-xs">Menit</span>
+                        </div>
+                        <div class="countdown-number flex flex-col items-center justify-center rounded-lg py-2">
+                            <span id="seconds" class="text-2xl font-bold">30</span>
+                            <span class="text-xs">Detik</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#register" class="py-3 px-8 rounded-lg shadow-lg transition duration-300 text-center font-bold" 
+                       style="background-color: var(--primary); color: white;">
+                        Daftar Sekarang Gratis
+                    </a>
+                    <a href="#benefits" class="py-3 px-8 rounded-lg shadow transition duration-300 text-center font-bold gold-border" 
+                       style="color: var(--primary); border-color: var(--accent);">
+                        <i class="fas fa-crown mr-2"></i>Lihat Keuntungan
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full flex items-center justify-center" style="background-color: var(--primary);">
+                        <div class="w-56 h-56 md:w-72 md:h-72 rounded-full flex items-center justify-center" style="background-color: var(--accent);">
+                            <div class="w-48 h-48 md:w-64 md:h-64 rounded-full flex flex-col items-center justify-center p-6 text-center" style="background-color: var(--light);">
+                                <i class="fas fa-star text-4xl mb-3" style="color: var(--accent);"></i>
+                                <h3 class="font-bold text-xl" style="color: var(--primary);">Reseller Sukses</h3>
+                                <p class="mt-2">Rata-rata komisi <span class="font-bold">Rp 15-35 juta</span>/bulan</p>
+                                <div class="mt-3 text-sm px-3 py-1 rounded-full city-badge">
+                                    Banyuwangi • Jember • Sidoarjo
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -top-4 -right-4 bg-white p-4 rounded-lg shadow-lg floating-button">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center" style="background-color: var(--primary);">
+                            <i class="fas fa-gift text-white text-2xl"></i>
+                        </div>
+                        <p class="text-xs text-center mt-1 font-bold" style="color: var(--primary);">GRATIS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16" style="background-color: var(--light);">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 h-title" style="color: var(--dark);">Keuntungan Menjadi Reseller Elmarwa</h2>
+                <p class="text-lg max-w-2xl mx-auto">Dapatkan semua keuntungan ini tanpa mengeluarkan modal apapun</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="benefit-card bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6" style="background-color: var(--primary);">
+                        <i class="fas fa-wallet text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--dark);">Tanpa Modal</h3>
+                    <p>Mulai bisnis umroh tanpa perlu mengeluarkan modal apapun. Kami sediakan semua yang Anda butuhkan.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="benefit-card bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6" style="background-color: var(--primary);">
+                        <i class="fas fa-bullseye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--dark);">Tanpa Target</h3>
+                    <p>Tidak ada target penjualan yang memberatkan. Bekerja sesuai kemampuan dan waktu Anda.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="benefit-card bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6" style="background-color: var(--primary);">
+                        <i class="fas fa-clock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--dark);">Tanpa Batas Waktu</h3>
+                    <p>Program berlaku selamanya tanpa batas waktu. Anda bisa menjalankannya kapan saja.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="benefit-card bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6" style="background-color: var(--primary);">
+                        <i class="fas fa-file-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--dark);">Tanpa Syarat</h3>
+                    <p>Tidak ada syarat rumit untuk bergabung. Siapapun bisa menjadi reseller kami.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 rounded-2xl p-8 md:p-12 text-white" style="background-color: var(--primary);">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-2/3 mb-8 md:mb-0">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">Komisi Menarik Setiap Penjualan</h3>
+                        <p class="text-lg opacity-90 mb-6">Dapatkan komisi hingga puluhan juta rupiah untuk setiap paket umroh yang berhasil Anda jual. Sistem pembayaran komisi yang cepat dan transparan.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--accent);"></i> Komisi langsung setelah jamaah berangkat</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--accent);"></i> Tidak ada batas jumlah penjualan</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--accent);"></i> Bonus tambahan untuk penjualan paket VIP</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/3 flex justify-center">
+                        <div class="bg-white rounded-xl p-6 text-center shadow-lg" style="color: var(--primary);">
+                            <div class="text-5xl font-bold mb-2">10%</div>
+                            <div class="font-bold">Komisi Minimum</div>
+                            <div class="text-sm mt-4">dari setiap paket umroh yang terjual</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Cities Section -->
+    <section id="cities" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 h-title" style="color: var(--dark);">Pasar Potensial Reseller Umroh</h2>
+                <p class="text-lg max-w-2xl mx-auto">20 Kabupaten/Kota dengan Volume Keberangkatan Umroh Tertinggi</p>
+                <div class="w-24 h-1 mx-auto mt-4" style="background-color: var(--accent);"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- City 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4" style="border-top-color: var(--accent);">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-xl mb-1">1. Banyuwangi</h3>
+                            <p class="text-sm mb-2">Jawa Timur</p>
+                        </div>
+                        <div class="bg-primary text-white text-sm px-3 py-1 rounded-full" style="background-color: var(--primary);">TOP</div>
+                    </div>
+                    <p class="mb-3"><span class="font-bold">12.000+</span> Jemaah/Tahun</p>
+                    <p class="text-sm">Bandara internasional baru (2024) melayani klaster "Sekarkijang"</p>
+                </div>
+                
+                <!-- City 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="font-bold text-xl mb-1">2. Jember</h3>
+                    <p class="text-sm mb-2">Jawa Timur</p>
+                    <p class="mb-3"><span class="font-bold">8.000+</span> Jemaah/Tahun</p>
+                    <p class="text-sm">Integrasi layanan Bandara Banyuwangi</p>
+                </div>
+                
+                <!-- City 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="font-bold text-xl mb-1">3. Sidoarjo</h3>
+                    <p class="text-sm mb-2">Jawa Timur</p>
+                    <p class="mb-3"><span class="font-bold">7.500+</span> Jemaah/Tahun</p>
+                    <p class="text-sm">Kedekatan dengan Bandara Juanda, basis PPIU terbanyak kedua di Jatim</p>
+                </div>
+                
+                <!-- City 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="font-bold text-xl mb-1">4. Bogor</h3>
+                    <p class="text-sm mb-2">Jawa Barat</p>
+                    <p class="mb-3"><span class="font-bold">7.200+</span> Jemaah/Tahun</p>
+                    <p class="text-sm">Kontributor utama Jabodetabek, jaringan agen umroh kuat</p>
+                </div>
+                
+                <!-- City 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="font-bold text-xl mb-1">5. Bekasi</h3>
+                    <p class="text-sm mb-2">Jawa Barat</p>
+                    <p class="mb-3"><span class="font-bold">6.800+</span> Jemaah/Tahun</p>
+                    <p class="text-sm">Akses ke Bandara Soetta, populasi Muslim padat</p>
+                </div>
+                
+                <!-- City 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="font-bold text-xl mb-1">6. Malang</h3>
+                    <p class="text-sm mb-2">Jawa Timur</p>
+                    <p class="mb-3"><span class="font-bold">6.500+</span> Jemaah/Tahun</p>
+                    <p class="text-sm">Bandara Abdul Rachman Saleh, pusat agen umroh regional</p>
+                </div>
+                
+                <!-- City 7 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="font-bold text-xl mb-1">7. Gresik</h3>
+                    <p class="text-sm mb-2">Jawa Timur</p>
+                    <p class="mb-3"><span class="font-bold">6.200+</span> Jemaah/Tahun</p>
+                    <p class="text-sm">Dukungan industri & akses Bandara Juanda</p>
+                </div>
+                
+                <!-- City 8 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="font-bold text-xl mb-1">8. Cirebon</h3>
+                    <p class="text-sm mb-2">Jawa Barat</p>
+                    <p class="mb-3"><span class="font-bold">5.900+</span> Jemaah/Tahun</p>
+                    <p class="text-sm">Basis pesantren besar, tradisi umroh kuat</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-lg mb-6">Dan masih banyak kota potensial lainnya seperti <span class="font-bold">Tasikmalaya, Deliserdang, Lombok Barat, Buleleng,</span> dan <span class="font-bold">Kutai Kartanegara</span></p>
+                <a href="#register" class="inline-block py-3 px-8 rounded-lg shadow-lg transition duration-300 font-bold" 
+                   style="background-color: var(--primary); color: white;">
+                    Daftar Sekarang & Bangun Jaringan di Kota Anda
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16" style="background-color: var(--light);">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 h-title" style="color: var(--dark);">Reseller Sukses di Berbagai Kota</h2>
+                <p class="text-lg max-w-2xl mx-auto">Ribuan reseller telah sukses bersama Elmarwa Haji Umroh</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold" style="background-color: var(--primary);">A</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Ahmad Farhan</h4>
+                            <p class="text-sm" style="color: var(--primary);">Banyuwangi, Jawa Timur</p>
+                        </div>
+                    </div>
+                    <p class="italic">"Bergabung sebagai reseller Elmarwa adalah keputusan terbaik saya. Dalam 6 bulan pertama, saya sudah mendapatkan komisi lebih dari Rp 35 juta. Bandara baru di Banyuwangi membuat bisnis ini semakin berkembang pesat!"</p>
+                    <div class="flex mt-4 text-sm">
+                        <span class="mr-4"><i class="fas fa-coins mr-1" style="color: var(--accent);"></i> Rp 78 juta (6 bulan)</span>
+                        <span><i class="fas fa-users mr-1" style="color: var(--accent);"></i> 12 jemaah</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold" style="background-color: var(--primary);">S</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Siti Rahayu</h4>
+                            <p class="text-sm" style="color: var(--primary);">Bogor, Jawa Barat</p>
+                        </div>
+                    </div>
+                    <p class="italic">"Sebagai ibu rumah tangga di Bogor, program reseller Elmarwa sangat cocok karena fleksibel. Saya bisa kerja dari rumah dan hasilnya luar biasa! Dalam setahun sudah bisa menabung untuk umroh sendiri."</p>
+                    <div class="flex mt-4 text-sm">
+                        <span class="mr-4"><i class="fas fa-coins mr-1" style="color: var(--accent);"></i> Rp 42 juta (4 bulan)</span>
+                        <span><i class="fas fa-users mr-1" style="color: var(--accent);"></i> 7 jemaah</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold" style="background-color: var(--primary);">B</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Budi Santoso</h4>
+                            <p class="text-sm" style="color: var(--primary);">Deliserdang, Sumatera Utara</p>
+                        </div>
+                    </div>
+                    <p class="italic">"Dari Medan, saya manfaatkan Bandara Kualanamu sebagai hub. Pelatihan Elmarwa sangat lengkap. Komisi dibayar tepat waktu setiap bulan. Sekarang sudah punya tim 5 reseller di Sumatera Utara."</p>
+                    <div class="flex mt-4 text-sm">
+                        <span class="mr-4"><i class="fas fa-coins mr-1" style="color: var(--accent);"></i> Rp 125 juta (10 bulan)</span>
+                        <span><i class="fas fa-users mr-1" style="color: var(--accent);"></i> 18 jemaah</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="form-container py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden gold-border">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 p-8 md:p-12" style="background-color: var(--light);">
+                            <h2 class="text-3xl font-bold mb-4 h-title" style="color: var(--dark);">Daftar Kelas Gratis Sekarang!</h2>
+                            <p class="mb-6">Isi formulir berikut untuk mendapatkan akses ke kelas reseller umroh gratis. Kami akan mengirimkan materi pembelajaran langsung ke email Anda.</p>
+                            
+                            <div class="mb-6 p-4 rounded-lg" style="background-color: rgba(112, 28, 26, 0.05); border-left: 4px solid var(--accent);">
+                                <p class="font-bold" style="color: var(--primary);">⏰ PENDAFTARAN AKAN DITUTUP PADA:</p>
+                                <p class="font-bold">25 Juli 2025 Pukul 23:59 WIB</p>
+                                <p class="text-sm mt-2">Hanya 157 kuota tersisa dari total 500 peserta</p>
+                            </div>
+                            
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--primary);"></i> Akses video pembelajaran eksklusif</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--primary);"></i> E-book panduan lengkap</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--primary);"></i> Template marketing siap pakai</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--primary);"></i> Grup komunitas reseller</li>
+                                <li class="flex items-center"><i class="fas fa-check-circle mr-3" style="color: var(--primary);"></i> Akses data pasar 20 kota potensial</li>
+                            </ul>
+                            <div class="flex items-center">
+                                <div class="mr-4">
+                                    <i class="fas fa-users text-3xl" style="color: var(--primary);"></i>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold" style="color: var(--primary);">2.500+</div>
+                                    <div>Reseller aktif</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-8 md:p-12">
+                            <form id="registrationForm">
+                                <div class="mb-6">
+                                    <label for="nama" class="block font-medium mb-2">Nama Lengkap</label>
+                                    <input type="text" id="nama" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" 
+                                           style="border-color: var(--accent);" required>
+                                </div>
+                                <div class="mb-6">
+                                    <label for="email" class="block font-medium mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" 
+                                           style="border-color: var(--accent);" required>
+                                </div>
+                                <div class="mb-6">
+                                    <label for="phone" class="block font-medium mb-2">Nomor WhatsApp</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" 
+                                           style="border-color: var(--accent);" required>
+                                </div>
+                                <div class="mb-6">
+                                    <label for="city" class="block font-medium mb-2">Kota Tempat Tinggal</label>
+                                    <select id="city" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" 
+                                            style="border-color: var(--accent);" required>
+                                        <option value="">Pilih Kota Anda</option>
+                                        <option value="Banyuwangi">Banyuwangi</option>
+                                        <option value="Jember">Jember</option>
+                                        <option value="Sidoarjo">Sidoarjo</option>
+                                        <option value="Bogor">Bogor</option>
+                                        <option value="Bekasi">Bekasi</option>
+                                        <option value="Malang">Malang</option>
+                                        <option value="Gresik">Gresik</option>
+                                        <option value="Cirebon">Cirebon</option>
+                                        <option value="Tasikmalaya">Tasikmalaya</option>
+                                        <option value="Deliserdang">Deliserdang</option>
+                                        <option value="Lainnya">Lainnya</option>
+                                    </select>
+                                </div>
+                                <div class="mb-6">
+                                    <label for="messageType" class="block font-medium mb-2">Tingkat Prioritas</label>
+                                    <select id="messageType" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" 
+                                            style="border-color: var(--accent);" required>
+                                        <option value="default">Reguler</option>
+                                        <option value="priority">Prioritas (Cepat Respon)</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="w-full py-3 px-4 rounded-lg shadow transition duration-300 font-bold whatsapp-button">
+                                    <i class="fab fa-whatsapp"></i> Daftar via WhatsApp
+                                </button>
+                                <p class="text-center text-sm mt-4" style="color: var(--primary);">
+                                    <i class="fas fa-shield-alt mr-1"></i>Data Anda aman dan tidak akan disalahgunakan
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Badges Section -->
+    <section class="legal-section">
+        <div class="container mx-auto px-4">
+            <div class="section-title">
+                <h2>Resmi & Terpercaya</h2>
+                <p>Legalitas lengkap untuk keamanan bisnis Anda</p>
+            </div>
+            
+            <div class="legal-badges">
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="badge-text">Izin Kemenag No: U.719 Tahun 2020</div>
+                </div>
+                
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="badge-text">Nomor SK PPIU: NOMOR U.243 TAHUN 2021</div>
+                </div>
+                
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="badge-text">Nomor IZIN PIHK: 9120018022349</div>
+                </div>
+                
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="badge-text">Anggota SAPUHI</div>
+                </div>
+                
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="badge-text">PT. Marwa Mustajab Wisata</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-white" style="background-color: var(--dark);">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style="background-color: var(--accent); color: var(--dark);">E</div>
+                        <span class="ml-3 text-xl font-bold text-white">Elmarwa Haji Umroh</span>
+                    </div>
+                    <p class="max-w-xs mb-6" style="color: #ccc;">
+                        Penyedia layanan haji dan umroh profesional dengan pengalaman lebih dari 10 tahun.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-secondary" style="color: #ccc;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-secondary" style="color: #ccc;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-secondary" style="color: #ccc;"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="hover:text-secondary" style="color: #ccc;"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Perusahaan</h4>
+                        <ul class="space-y-2" style="color: #ccc;">
+                            <li><a href="#" class="hover:text-secondary">Tentang Kami</a></li>
+                            <li><a href="#" class="hover:text-secondary">Paket Umroh</a></li>
+                            <li><a href="#" class="hover:text-secondary">Blog</a></li>
+                            <li><a href="#" class="hover:text-secondary">Karir</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Dukungan</h4>
+                        <ul class="space-y-2" style="color: #ccc;">
+                            <li><a href="#" class="hover:text-secondary">Hubungi Kami</a></li>
+                            <li><a href="#" class="hover:text-secondary">FAQ</a></li>
+                            <li><a href="#" class="hover:text-secondary">Syarat & Ketentuan</a></li>
+                            <li><a href="#" class="hover:text-secondary">Kebijakan Privasi</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Kantor</h4>
+                        <p class="mb-2" style="color: #ccc;">
+                            <i class="fas fa-map-marker-alt mr-3"></i> Jl. Perjuangan No. 123, Jakarta Selatan
+                        </p>
+                        <p class="mb-2" style="color: #ccc;">
+                            <i class="fas fa-phone-alt mr-3"></i> (021) 1234-5678
+                        </p>
+                        <p style="color: #ccc;">
+                            <i class="fas fa-envelope mr-3"></i> info@elmarwa.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t mt-12 pt-8 text-center" style="border-color: rgba(255,255,255,0.1); color: #999;">
+                <p>&copy; 2025 Elmarwa Haji Umroh. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6289501303251" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition z-50" style="background-color: #25D366;">
+        <i class="fab fa-whatsapp text-white text-3xl"></i>
+    </a>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const targetDate = new Date();
+            targetDate.setDate(now.getDate() + 2); // 2 days from now
+            targetDate.setHours(23, 59, 59, 999); // Set to end of day
+            
+            const diff = targetDate - now;
+            
+            if (diff <= 0) {
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
+            }
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+        
+        // Auto-format phone number
+        document.getElementById('phone').addEventListener('input', function(e) {
+            this.value = this.value.replace(/\D/g, '').replace(/^0/, '62');
+        });
+        
+        // WhatsApp Templates
+        const whatsappTemplates = {
+            default: `Halo Admin Elmarwa, saya ingin daftar reseller umroh.%0A%0A` +
+                     `*Nama:* ${nama}%0A` +
+                     `*Email:* ${email}%0A` +
+                     `*Nomor HP:* ${phone}%0A` +
+                     `*Kota:* ${city}%0A%0A` +
+                     `Mohon info selanjutnya. Terima kasih.`,
+                     
+            priority: `[PRIORITAS] Pendaftaran Reseller Umroh%0A%0A` +
+                      `Nama: ${nama}%0A` +
+                      `Email: ${email}%0A` +
+                      `No. HP: ${phone}%0A` +
+                      `Kota: ${city}%0A%0A` +
+                      `Saya memilih pendaftaran prioritas. Mohon segera dihubungi!`
+        };
+
+        // Form submission to WhatsApp
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const city = document.getElementById('city').value;
+            const messageType = document.getElementById('messageType').value;
+
+            // Save to localStorage
+            localStorage.setItem('pendaftarTerakhir', JSON.stringify({
+                nama: nama,
+                email: email,
+                phone: phone,
+                city: city,
+                messageType: messageType,
+                timestamp: new Date().toISOString()
+            }));
+
+            // Prepare WhatsApp message
+            const message = encodeURIComponent(
+                whatsappTemplates[messageType]
+                .replace('${nama}', nama)
+                .replace('${email}', email)
+                .replace('${phone}', phone)
+                .replace('${city}', city)
+            );
+            
+            // WhatsApp number
+            const whatsappNumber = '6289501303251';
+            
+            // Open WhatsApp
+            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+            
+            // Show confirmation
+            alert('Terima kasih! Anda akan diarahkan ke WhatsApp untuk menyelesaikan pendaftaran.');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
